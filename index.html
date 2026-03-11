@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>飞机大作战</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Airplane Battle 飞机大作战</h1>
+        <div class="game-info">
+            <div class="score">Score: 分数: <span id="score">0</span></div>
+            <div class="controls">
+                <button id="start-btn">Start 开始</button>
+                <button id="pause-btn" disabled>Pause 暂停</button>
+                <button id="reset-btn" disabled>Reset 重置</button>
+            </div>
+        </div>
+        <canvas id="gameCanvas" width="550" height="600"></canvas>
+        <div class="instructions">
+            <h3>Instructions 游戏说明</h3>
+            <p>Use arrow keys, mouse move, or touch swipe to control the airplane. 使用键盘左右键、鼠标移动或触摸滑动控制飞机移动</p>
+            <p>The airplane automatically fires bullets. 飞机会自动发射子弹</p>
+            <p>Score by hitting enemy planes, game over if hit by enemy. 击中敌机得分，被敌机撞到游戏结束</p>
+            <p>There are 9 types of enemy planes with different shapes and speeds. 有9种不同形状和速度的敌机</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
